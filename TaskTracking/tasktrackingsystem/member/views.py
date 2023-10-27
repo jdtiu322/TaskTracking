@@ -9,6 +9,12 @@ from django.shortcuts import redirect
 from user.models import User
 
 
+def css(request):
+    return render(request, 'member_registration.html')
+
+def index(request):
+    return render(request, 'index.html')
+
 class MemberRegistration(View):
     template_name = "member_registration.html"
 

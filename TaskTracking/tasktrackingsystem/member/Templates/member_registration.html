@@ -2,13 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Member Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
 </head>
-<body>
-    <form method="post" >
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Register">
-    </form>
+
+<body style="background: url('{% static 'background.jpg' %}') no-repeat center center fixed; background-size: cover; opacity: 0.8;">
+
+
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand logo" href="#" style="font-family: Archivo, sans-serif; color: rgba(255, 255, 255, 0.9); font-weight: bold;">TaskMaster</a>
+            <div class="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="aboutus.html">About Us</a>
+                <a class="nav-link" href="login.html">Log In</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page landing-page">
+        <section class="clean-block clean-hero" style="color: rgba(9, 162, 255, 0); background: url('{% static 'background.jpg' %}');">
+            <div class="text">
+                <h2 style="font-family: Archivo, sans-serif; font-size: 80px; font-weight: bold;">TaskMaster</h2>
+                <p style="font-family: Archivo, sans-serif;">We're here to support you on your journey to a brighter future. Explore the resources and assistance we offer, and know that we're here for you every step of the way. Together, we'll navigate toward a better tomorrow.</p>
+                <button class="btn btn-outline-light btn-lg" type="button">Learn More</button>
+            </div>
+        </section>
+
+        <!-- Member Registration Form -->
+        <section class="clean-block clean-form">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Member Registration</h2>
+                </div>
+                <form method="post" class="your-form-class">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit" value="Register" class="btn btn-primary">
+                </form>
+            </div>
+        </section>
+
+        <!-- Rest of your sections goes here -->
+
+    </main>
+
+    <!-- Footer Section -->
+
 </body>
+
 </html>
