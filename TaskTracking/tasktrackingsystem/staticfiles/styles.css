@@ -1,0 +1,94 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    font-family: Archivo, sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* Hero section styles */
+.clean-hero {
+    background-image: {% static 'background.jpg' %};
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.clean-hero h2 {
+    font-family: Archivo, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.clean-hero p {
+    font-family: Archivo, sans-serif;
+    font-size: 16px;
+}
+
+/* Member Registration Form styles */
+.clean-form {
+    background: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.block-heading h2 {
+    font-family: Archivo, sans-serif;
+    font-size: 24px;
+    color: #009cff;
+    margin-bottom: 20px;
+}
+
+.your-form-class {
+    text-align: left;
+}
+
+/* Footer styles */
+.page-footer {
+    background: #ff6600;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-copyright {
+    color: #fff;
+}
+
